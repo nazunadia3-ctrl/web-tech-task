@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Box Model and Display Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>CSS Box Model and Display Properties</h1>
+
+  <!-- Part A + Part B: Box Model + Box Sizing -->
+  <section>
+    <h2>Part A and B: Box Model and Box Sizing</h2>
+
+    <div class="box defaultBox">
+      Default box sizing (content-box)
+    </div>
+
+    <div class="box borderBox">
+      box-sizing: border-box
+    </div>
+
+    <div class="box bigMargin">
+      Different margin, padding, border
+    </div>
+  </section>
+
+  <!-- Part C: Display Properties -->
+  <section>
+    <h2>Part C: Display Properties</h2>
+
+    <div class="displayBlock">I am a DIV (display: block)</div>
+
+    <p>
+      This is a paragraph with
+      <span class="displayInline">INLINE span</span>
+      and
+      <span class="displayInlineBlock">INLINE-BLOCK span</span>
+      inside.
+    </p>
+
+    <p class="displayNone">
+      You should not see this paragraph (display: none).
+    </p>
+  </section>
+
+  <!-- Part D: Visibility vs Display -->
+  <section>
+    <h2>Part D: Visibility vs Display</h2>
+
+    <div class="visibilityHidden">
+      I am hidden using visibility: hidden (space remains).
+    </div>
+
+    <div class="displayNoneBox">
+      I am hidden using display: none (no space remains).
+    </div>
+
+    <div class="afterHidden">
+      This box helps you compare spacing after hidden elements.
+    </div>
+  </section>
+
+</body>
+</html>

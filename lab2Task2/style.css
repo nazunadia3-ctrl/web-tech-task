@@ -1,0 +1,58 @@
+/* =========================
+   CSS UNITS SECTION
+========================= */
+
+/* Absolute Units */
+h1, h2 {                 /* Group Selector */
+    font-size: 24px;     /* px */
+    margin: 1cm;         /* cm */
+    text-align: center;
+}
+
+/* Relative Units */
+body {
+    font-size: 16px;
+}
+
+.box {
+    width: 50%;          /* percentage */
+    height: 30vh;        /* viewport height */
+    background-color: lightblue;
+    padding: 2em;        /* em */
+    margin: 2rem;        /* rem */
+}
+
+/* =========================
+   SELECTOR TYPES
+========================= */
+
+/* Descendant Selector */
+div p {
+    color: blue;
+}
+
+/* Attribute Selector */
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid gray;
+}
+
+/* =========================
+   PSEUDO CLASSES
+========================= */
+
+/* Hover */
+a:hover {
+    color: red;
+}
+
+/* Focus */
+input[type="text"]:focus {
+    border-color: green;
+    background-color: #f0f0f0;
+}
+
+/* Active */
+button:active {
+    background-color: orange;
+}
