@@ -1,0 +1,82 @@
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+}
+
+/* Form styling */
+form {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Input fields */
+input[type="text"] {
+    padding: 8px;
+    width: 180px;
+    margin: 5px;
+}
+
+/* Buttons */
+button {
+    padding: 8px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/* Student list */
+#student-list {
+    list-style-type: none;
+    padding: 0;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+/* Each student item */
+.student-item {
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+}
+
+/* Student text */
+.student-item span {
+    flex: 1;
+}
+
+/* Edit button */
+.btn-edit {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+}
+
+/* Delete button */
+.btn-delete {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    margin-left: 5px;
+}
+
+/* Highlight style */
+.highlight {
+    background-color: yellow;
+}
+
+/* Student count text */
+#student-count {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
