@@ -1,0 +1,202 @@
+/* Reset */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+
+body{
+background:#fff0f6;
+color:#333;
+}
+
+/* Navbar */
+
+header{
+padding:20px 80px;
+background:#ffe3ec;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+color:#d63384;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:30px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#444;
+font-weight:500;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#d63384;
+}
+
+/* Hero Section */
+.home-container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:50px;
+}
+
+.home-text{
+max-width:500px;
+}
+
+.home-image img{
+width:250px;
+border-radius:10px;
+}
+#home{
+height:80vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+#home h4{
+color:#d63384;
+margin-bottom:10px;
+}
+
+#home h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+#home p{
+font-size:20px;
+margin-bottom:30px;
+color:#555;
+}
+
+/* Buttons */
+
+button{
+padding:12px 25px;
+margin:10px;
+border-radius:6px;
+border:none;
+cursor:pointer;
+font-size:16px;
+transition:0.3s;
+}
+
+button:first-of-type{
+background:#ff4d94;
+color:white;
+}
+
+button:last-of-type{
+border:2px solid #ff4d94;
+background:transparent;
+color:#ff4d94;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+/* Sections */
+
+section{
+padding:80px;
+text-align:center;
+}
+
+/* Footer */
+
+footer{
+text-align:center;
+padding:20px;
+background:#ffe3ec;
+color:#444;
+}
+/* Projects Section */
+
+#projects{
+background:#fff;
+}
+
+.projects-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.project-card{
+background:#ffe3ec;
+padding:20px;
+width:280px;
+border-radius:10px;
+text-align:center;
+transition:0.3s;
+}
+
+.project-card img{
+width:100%;
+border-radius:8px;
+}
+
+.project-card h3{
+margin:15px 0;
+color:#d63384;
+}
+
+.project-card p{
+font-size:14px;
+color:#555;
+margin-bottom:15px;
+}
+
+.project-card a{
+text-decoration:none;
+background:#ff4d94;
+color:white;
+padding:8px 15px;
+border-radius:5px;
+}
+
+.project-card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+.certificate-container{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+}
+
+.certificate-card{
+width:200px;
+text-align:center;
+}
+
+.certificate-card img{
+width:100%;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
