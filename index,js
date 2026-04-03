@@ -1,0 +1,42 @@
+document.getElementById("submit").addEventListener("click", function () {
+
+    let name = document.getElementById("name").value;
+    let age = document.getElementById("age").value;
+
+    // Name validation
+    let pattern = /^[A-Za-z]+$/;
+
+    if (name === "" || !pattern.test(name)) {
+        alert("Invalid Name");
+        return;
+    }
+
+    // Age validation
+    age = Number(age);
+
+    if (isNaN(age) || age < 18 || age > 100) {
+        alert("Invalid Age");
+        return;
+    }
+
+    // Add to table
+    let table = document.getElementById("table");
+    let row = table.insertRow();
+
+    let cell1 = row.insertCell(0);
+    let cell2 = row.insertCell(1);
+
+    cell1.innerHTML = name;
+    cell2.innerHTML = age;
+
+    // Color
+    if (age < 30) {
+        row.style.backgroundColor = "lightblue";
+    } else {
+        row.style.backgroundColor = "lightyellow";
+    }
+
+    // Clear input
+    document.getElementById("name").value = "";
+    document.getElementById("age").value = "";
+});
