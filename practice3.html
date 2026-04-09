@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Enter Number: <input type="number" id="num">
+<p id="result"></p>
+
+<script>
+let input = document.getElementById("num");
+let result = document.getElementById("result");
+
+input.addEventListener("input", function() {
+    let value = Number(this.value);
+
+    if (this.value === "") {
+        result.innerText = "";
+    }
+    else if (value % 2 === 0) {
+        result.innerText = "Even Number";
+    } 
+    else {
+        result.innerText = "Odd Number";
+    }
+});
+</script>
+
+</body>
+</html>

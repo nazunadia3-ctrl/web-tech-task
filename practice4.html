@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form>
+            Password:<input type="password" id="pass">
+            <p id="result"></p>
+        </form>
+        <script>
+            let password = document.getElementById("pass");
+             let result = document.getElementById("result");
+            password.addEventListener("input",function(){
+                let length = this.value.length;
+                 if (length === 0) {
+                    result.innerText = "";
+                }
+
+                else if(length < 6)
+            {
+                result.innerText="Password weak";
+                result.style.color ="black";
+
+            }
+           else if (length <= 10) {
+               result.innerText = "Password Medium";
+                result.style.color = "black";
+           }
+            else {
+              result.innerText = "Strong Password";
+               result.style.color = "green";
+            }
+        });
+        
+        </script>
+    </body>
+</html>

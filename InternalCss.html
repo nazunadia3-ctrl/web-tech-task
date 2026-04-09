@@ -1,16 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>
-            Css practice
-        </title>
-        <style>
-            h1{
-                color: blue;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>INTERNAL CSS</h1>
-    </body>
+<html>
+<body>
+
+<form>
+  Enter Age: <input type="number" id="age">
+</form>
+
+<p id="message"></p>
+
+<script>
+const ageInput = document.getElementById("age");
+const msg = document.getElementById("message");
+
+ageInput.addEventListener("input", function(){
+  let age = Number(ageInput.value);
+
+  if(age < 40){
+    msg.textContent = "To be a part of the community, you need to at least 40";
+    msg.style.color = "black";
+  }
+  else if(age >= 40 && age <= 50){
+    msg.textContent = "You are the youngsters of this community";
+    msg.style.color = "black";
+  }
+  else if(age > 50){
+    msg.textContent = "Top level members of the group";
+    msg.style.color = "red";
+  }
+});
+</script>
+
+</body>
 </html>

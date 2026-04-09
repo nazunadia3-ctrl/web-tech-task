@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="inputBox" placeholder="Type here">
+<p id="output">Type something...</p>
+
+<script>
+let input = document.getElementById("inputBox");
+let output = document.getElementById("output");
+
+input.addEventListener("input", function() {
+    if (this.value === "") {
+        output.innerText = "Type something...";
+    } else {
+        output.innerText = this.value;
+    }
+});
+</script>
+
+</body>
+</html>
