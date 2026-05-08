@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AJAX Student Information</title>
+</head>
+<body>
+
+<h2>Student Information</h2>
+
+<button onclick="fetchStudent()">Fetch Student Info</button>
+
+<div id="output"></div>
+
+<script>
+function fetchStudent() {
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("GET", "getStudent.php", true);
+
+    xhr.onload = function() {
+        if (xhr.status == 200) {
+            var student = JSON.parse(xhr.responseText);
+
+            var result = "";
+            result += "<h3>Student Details</h3>";
+            result += "<p><b>Name:</b> " + student.name + "</p>";
+            result += "<p><b>ID:</b> " + student.id + "</p>";
+            result += "<p><b>Department:</b> " + student.department + "</p>";
+            result += "<p><b>CGPA:</b> " + student.cgpa + "</p>";
+
+            document.getElementById("output").innerHTML = result;
+        }
+    };
+
+    xhr.send();
+}
+</script>
+
+</body>
+</html>
