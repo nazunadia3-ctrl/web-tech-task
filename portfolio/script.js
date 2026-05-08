@@ -21,7 +21,6 @@ img:"Hotelmanagment.png"
 
 const container = document.getElementById("projectsContainer");
 
-// Safety check
 if(container){
 projects.forEach(p=>{
 const card = `
